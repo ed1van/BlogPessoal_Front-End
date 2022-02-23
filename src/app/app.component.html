@@ -1,1 +1,5 @@
+<app-menu *ngIf="auth.logado()"></app-menu>
+
 <router-outlet></router-outlet> <!--ele muda, toda vez que altera depois da /-->
+
+<app-rodape *ngIf="auth.logado()"></app-rodape>

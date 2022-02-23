@@ -29,6 +29,11 @@ export class EntrarComponent implements OnInit {
     this.authService.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin)=>{
       this.usuarioLogin = resp
 
+      environment.token = this.usuarioLogin.token
+      environment.nome = this.usuarioLogin.nome
+      environment.foto = this.usuarioLogin.foto
+      environment.id = this.usuarioLogin.id
+
 //console.log(environment.nome) para ver no conole externo da pag
 
       this.router.navigate(['/inicio'])

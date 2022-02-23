@@ -6,4 +6,4 @@ export const environment = {
   foto: ''
 
 
-};
+}; //por ser uma pagina unica, sempre que atualizar ela vai deslogar

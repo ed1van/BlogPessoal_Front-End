@@ -6,8 +6,8 @@ import { AuthService } from './service/auth.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  
+export class AppComponent { //usar o authservice no ts dos componentes 
+
   constructor(public auth: AuthService){
 
   }

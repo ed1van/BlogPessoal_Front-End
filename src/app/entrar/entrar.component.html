@@ -1,34 +1,33 @@
-<div class="container-fluid">
+<div class="container-fluid ">
 
-  <div class="row d-flex align-items-center">
+  <div class="row d-flex align-items-center justify-content-center ">
 
-    <div class="col-md-6">
+    <div class="col-md-6 ">
 
       <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
-
-          <h1 class="text-center mb-3">Entrar</h1>
-
+        <div class="col-md-6 op-entrar ">
+          <div class="simb"><img src="../../assets/img/simbolo.png" alt=""> </div>
+         <h1 class="text-center ">Entrar</h1>
           <div class="form-group">
-            <label for="usuario">Usuário</label>
-            <input [(ngModel)]="usuarioLogin.usuario" class="form-control" type="text" name="usuario" id="usuario"
-            placeholder="seu usuario">
+            <label for="usuario"></label>
+            <input [(ngModel)]="usuarioLogin.usuario" class="form-control " type="text" name="usuario" id="usuario"
+            placeholder="Email">
           </div>
 
           <div class="form-group">
-            <label for="senha">Senha</label>
-            <input [(ngModel)]="usuarioLogin.senha" class="form-control" type="password" name="senha" id="senha"
-            placeholder="sua senha">
+            <label for="senha"></label>
+            <input [(ngModel)]="usuarioLogin.senha" class="form-control texto" type="password" name="senha" id="senha"
+            placeholder="Senha">
           </div>
 
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-outline-success" (click)='entrar()'>Entrar</button>
+            <button type="submit" class="btn btn-outline-dark " (click)='entrar()'><img class="simbolo-entrar" src="../../assets/img/simbolo coringa.jpg" alt=""> Entrar</button>
           </div>
 
           <hr class="mt-5 mb-5">
 
-          <p class="text-center ">Não tem uma conta?
-            <a class="text-success" routerLink="/cadastrar">Cadastra-se</a> <!-- routerLink="/cadastrar" usa para para rotas externas -->
+          <p class="text-center  ">Não tem uma conta?
+            <a class=" texto" routerLink="/cadastrar">Cadastra-se</a> <!-- routerLink="/cadastrar" usa para para rotas externas -->
           </p>
 
         </div>
@@ -37,9 +36,10 @@
 
     </div>
 
-    <div class="col-md-6" id="img-bg">   </div>
+  <div class="col-md-6" id="img-bg">   </div>
 
   </div>
 
-
 </div>
+
+

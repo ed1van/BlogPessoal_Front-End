@@ -1,13 +1,36 @@
 #img-bg
 {
-background-image: url(../../assets/img/imagem4.jpg);
+background-image: url(../../assets/img/Coringa.jpg);
 
-min-height: 695px;
+height: 625px;
 
 background-position: center;
 
 background-repeat: no-repeat;
 
 background-size: cover;
+
+display: flex;
+
 }
+
+
+.simb{
+
+  z-index: -100;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.simbolo-entrar{
+  height: 42px;
+
+}
+
+
+.texto{
+  color: blueviolet;
+}
+
 

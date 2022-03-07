@@ -1,3 +1,6 @@
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { NgModule } from '@angular/core';
@@ -23,6 +26,11 @@ const routes: Routes = [
 
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
 
+  {path: 'postagem-edit/:id', component: PostagemEditComponent},
+
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
+
+  {path: 'usuario-edit/:id', component: UsuarioEditComponent},
 
 ];
 

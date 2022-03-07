@@ -17,29 +17,29 @@ export class TemaService {
 
   getAllTema(): Observable<Tema[]>
   {
-    return this.http.get<Tema[]>('https://blogpessoaldoed.herokuapp.com/tema', this.token)
+    return this.http.get<Tema[]>('http://localhost:8080/tema', this.token)
   }
 
   getByIdTema(id: number):  Observable<Tema>
   {
-    return this.http.get<Tema>(`https://blogpessoaldoed.herokuapp.com/tema/${id}`, this.token)
+    return this.http.get<Tema>(`http://localhost:8080/tema/${id}`, this.token)
   }
 
 
   postTema(tema: Tema): Observable<Tema> //Observable: priorizar meu Model <Tema>
   {
-    return this.http.post<Tema>('https://blogpessoaldoed.herokuapp.com/tema', tema, this.token)
+    return this.http.post<Tema>('http://localhost:8080/tema', tema, this.token)
   } //this.token traz o token que foi criado acima, para validar o post tema
 
   putTema(tema: Tema): Observable<Tema>
   {
-    return this.http.put<Tema> ('https://blogpessoaldoed.herokuapp.com/tema', tema, this.token)
+    return this.http.put<Tema> ('http://localhost:8080/tema', tema, this.token)
   }
 
   deleteTema(id: number) // não precisa do Observable .
   //id: number só é necessário passar uma variável
   {
-    return this.http.delete(`https://blogpessoaldoed.herokuapp.com/tema/${id}`, this.token)
+    return this.http.delete(`http://localhost:8080/tema/${id}`, this.token)
     //nesse se usa ``crase
     //${id} para passar o id que será deletado
   }

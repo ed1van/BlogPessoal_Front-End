@@ -3,5 +3,5 @@ export class Tema
 {
   public id: number
   public descricao: string
-  public Postagens: Postagens []
+  public postagens: Postagens []
 }
